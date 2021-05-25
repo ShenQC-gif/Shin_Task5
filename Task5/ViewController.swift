@@ -39,12 +39,12 @@ class ViewController: UIViewController {
 
     private func showAlert(msg: String) {
 
-        let alert = UIAlertController(title: "課題5", message: msg, preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "課題5", message: msg, preferredStyle: .alert)
+
+        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(defaultAction)
 
         present(alert, animated: true, completion: nil)
-
-        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
-        alert.addAction(defaultAction)
     }
 
 }
